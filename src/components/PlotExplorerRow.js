@@ -4,10 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
-import FigureImage from 'react-bootstrap/FigureImage'
-import FigureCaption from 'react-bootstrap/FigureCaption'
+import FigureImage from 'react-bootstrap/FigureImage';
+import FigureCaption from 'react-bootstrap/FigureCaption';
 import makeAnimated from 'react-select/animated';
-
 
 
 const plotvars = [
@@ -28,7 +27,6 @@ const plotvars = [
   { value: 'prsn', label: 'Snowfall Flux' },
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
-
 
 const evalagainst = [
   { value: 'HadUK-grid', label: 'HadUK-grid' },
@@ -70,7 +68,7 @@ const timeperiods = [
 
 export default function PlotExplorerRow({data}){
 
-  //const [plotvars, setPlotVar] = useState({})
+  // const [plotvars, setPlotVar] = useState({})
   // const [evalagainst, setEvalAgainst] = useState({})
   // const [regmodels, setRegModel] = useState({})
   // const [timeperiods, setTimePeriod] = useState({})
@@ -83,28 +81,28 @@ export default function PlotExplorerRow({data}){
           <Select
             options={plotvars}
             //onChange={setPlotVar}
-            placeHolder="Select variable"
+            placeholder="Select variable"
             />
         </Col>
         <Col>
           <Select
             options={evalagainst}
             // onChange={setPlotVar}
-            placeHolder="Select variable"
+            placeholder="Select model to evaluate against"
             />
         </Col>
         <Col>
           <Select
             options={regmodels}
             // onChange={setPlotVar}
-            placeHolder="Select variable"
+            placeholder="Select regional model"
             />
         </Col>
         <Col>
           <Select
             options={timeperiods}
             // onChange={setPlotVar}
-            placeHolder="Select variable"
+            placeholder="Select time period"
             />
         </Col>
       </Row>
