@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -76,7 +77,7 @@ export default function PlotExplorerRow({data}){
 
   return(
     <Container>
-      <Row>
+      <Row className="pt-4">
         <Col>
           <Select
             options={plotvars}
@@ -106,7 +107,7 @@ export default function PlotExplorerRow({data}){
             />
         </Col>
       </Row>
-      <Row>
+      <Row className="py-4">
         <Figure>
         <Figure.Image
           alt="Image NOT found"
@@ -116,6 +117,11 @@ export default function PlotExplorerRow({data}){
           Plot showing: Variable - Against - Regional - Time period
         </Figure.Caption>
         </Figure>
+      </Row>
+      <Row className="py-5">
+        <Col>
+          <Button variant="outline-info">Add another plot to compare</Button>{' '}
+        </Col>
       </Row>
     </Container>
   )
