@@ -111,8 +111,8 @@ export default function PlotExplorerRow({data}){
       <Row>
         <Figure>
         <Figure.Image
-          alt="Image_not_found"
-          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg"
+          alt="Image NOT found"
+          src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_wsgsmax_ECMWF-ERAINT_CCLM4-8-17_Aug.png`}
         />
         <Figure.Caption>
           Plot showing: Variable - Against - Regional - Time period
