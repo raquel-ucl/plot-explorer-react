@@ -111,10 +111,10 @@ export default function PlotExplorerRow({data}){
         <Figure>
           <Figure.Image
             alt="Image NOT found"
-            src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_wsgsmax_ECMWF-ERAINT_CCLM4-8-17_Aug.png`}
+            src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_${plotvar.value}_${evalagainst.value}_${regmodel.value}_${timeperiod.value}.png`}
           />
           <Figure.Caption>
-            Plot showing: Variable - Against - Regional - Time period
+            Plot showing: plotvar - Against - regmodel - Time period
           </Figure.Caption>
         </Figure>
       </Row>
