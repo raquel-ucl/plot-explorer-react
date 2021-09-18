@@ -109,13 +109,13 @@ export default function PlotExplorerRow({data}){
       </Row>
       <Row className="py-4">
         <Figure>
-        <Figure.Image
-          alt="Image NOT found"
-          src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_wsgsmax_ECMWF-ERAINT_CCLM4-8-17_Aug.png`}
-        />
-        <Figure.Caption>
-          Plot showing: Variable - Against - Regional - Time period
-        </Figure.Caption>
+          <Figure.Image
+            alt="Image NOT found"
+            src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_wsgsmax_ECMWF-ERAINT_CCLM4-8-17_Aug.png`}
+          />
+          <Figure.Caption>
+            Plot showing: Variable - Against - Regional - Time period
+          </Figure.Caption>
         </Figure>
       </Row>
       <Row className="py-5">
