@@ -3,6 +3,7 @@ import Select from 'react-select';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import makeAnimated from 'react-select/animated';
 
 
@@ -67,7 +68,7 @@ const timeperiods = [
 
 export default function PlotExplorerRow({data}){
 
-  // const [plotvars, setPlotVar] = useState({})
+  //const [plotvars, setPlotVar] = useState({})
   // const [evalagainst, setEvalAgainst] = useState({})
   // const [regmodels, setRegModel] = useState({})
   // const [timeperiods, setTimePeriod] = useState({})
@@ -79,7 +80,7 @@ export default function PlotExplorerRow({data}){
         <Col>
           <Select
             options={plotvars}
-            // onChange={setPlotVar}
+            //onChange={setPlotVar}
             placeHolder="Select variable"
             />
         </Col>
@@ -104,6 +105,9 @@ export default function PlotExplorerRow({data}){
             placeHolder="Select variable"
             />
         </Col>
+      </Row>
+      <Row>
+        <Image src="rmse-decomposition_wsgsmax_ECMWF-ERAINT_RACMO22E_Aug.png" fluid/>
       </Row>
     </Container>
   )
