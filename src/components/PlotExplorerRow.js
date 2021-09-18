@@ -114,13 +114,15 @@ export default function PlotExplorerRow({data}){
             src={`${process.env.PUBLIC_URL}/images/rmse-decomposition_${plotvar.value}_${evalagainst.value}_${regmodel.value}_${timeperiod.value}.png`}
           />
           <Figure.Caption>
-            Plot showing: plotvar - Against - regmodel - Time period
+            Plot showing: {plotvar.value} - {evalagainst.value} - {regmodel.value} - {timeperiod.value}
           </Figure.Caption>
         </Figure>
       </Row>
       <Row className="py-5">
         <Col>
-          <Button variant="outline-info">Add another plot to compare</Button>{' '}
+          <Button
+          variant="outline-info"
+          >Add another plot to compare</Button>{' '}
         </Col>
       </Row>
     </Container>
