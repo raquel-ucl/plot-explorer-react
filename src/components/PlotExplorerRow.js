@@ -3,7 +3,9 @@ import Select from 'react-select';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+import Figure from 'react-bootstrap/Figure';
+import FigureImage from 'react-bootstrap/FigureImage'
+import FigureCaption from 'react-bootstrap/FigureCaption'
 import makeAnimated from 'react-select/animated';
 
 
@@ -107,7 +109,15 @@ export default function PlotExplorerRow({data}){
         </Col>
       </Row>
       <Row>
-        <Image src="rmse-decomposition_wsgsmax_ECMWF-ERAINT_RACMO22E_Aug.png" fluid/>
+        <Figure>
+        <Figure.Image
+          alt="Image_not_found"
+          src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/8-col/img%20(73).jpg"
+        />
+        <Figure.Caption>
+          Plot showing: Variable - Against - Regional - Time period
+        </Figure.Caption>
+        </Figure>
       </Row>
     </Container>
   )
