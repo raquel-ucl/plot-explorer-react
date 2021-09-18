@@ -29,7 +29,7 @@ const plotvars = [
   { value: 'rls', label: 'Net surface long wave flux' }
 ];
 
-const evalagainst = [
+const evalagainsts = [
   { value: 'HadUK-grid', label: 'HadUK-grid' },
   { value: 'ECMWF-ERAINT', label: 'ECMWF-ERAINT' }
 ]
@@ -69,10 +69,10 @@ const timeperiods = [
 
 export default function PlotExplorerRow({data}){
 
-  // const [plotvars, setPlotVar] = useState({})
-  // const [evalagainst, setEvalAgainst] = useState({})
-  // const [regmodels, setRegModel] = useState({})
-  // const [timeperiods, setTimePeriod] = useState({})
+  const [plotvar, setPlotvar] = useState({});
+  const [evalagainst, setEvalagainst] = useState({});
+  const [regmodel, setRegmodel] = useState({});
+  const [timeperiod, setTimeperiod] = useState({});
 
 
   return(
@@ -81,28 +81,28 @@ export default function PlotExplorerRow({data}){
         <Col>
           <Select
             options={plotvars}
-            //onChange={setPlotVar}
+            onChange={setPlotvar}
             placeholder="Select variable"
             />
         </Col>
         <Col>
           <Select
-            options={evalagainst}
-            // onChange={setPlotVar}
+            options={evalagainsts}
+            onChange={setEvalagainst}
             placeholder="Select model to evaluate against"
             />
         </Col>
         <Col>
           <Select
             options={regmodels}
-            // onChange={setPlotVar}
+            onChange={setRegmodel}
             placeholder="Select regional model"
             />
         </Col>
         <Col>
           <Select
             options={timeperiods}
-            // onChange={setPlotVar}
+            onChange={setTimeperiod}
             placeholder="Select time period"
             />
         </Col>
